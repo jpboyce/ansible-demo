@@ -24,5 +24,3 @@
         ip: 127.0.0.1
         port: 81
         physical_path: c:\sites\testsite
-        application_pool: TestSite
-        parameters: logfile.directory:C:\sites\logs
