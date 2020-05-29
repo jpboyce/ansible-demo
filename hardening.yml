@@ -19,4 +19,11 @@
         state: present
         name: LegalNoticeText
         type: string
-        data: Scary Legal Message        
+        data: Scary Legal Message
+  - name: CIS 2.3.7.5 - Configure 'Interactive logon Message title for users attempting to log on'
+    win_regedit:
+        path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+        state: present
+        name: LegalNoticeCaption
+        type: string
+        data: '*** WARNING ***'
