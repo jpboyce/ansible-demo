@@ -1,6 +1,7 @@
 ---
 - name: IIS Playbook
   hosts: all
+  gather_facts: yes
 
   tasks:
   - debug: var=hostvars[inventory_hostname]['ansible_default_ipv4']['address']
