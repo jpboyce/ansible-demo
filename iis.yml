@@ -4,8 +4,6 @@
   gather_facts: yes
 
   tasks:
-  - debug: 
-      msg: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }}"
   - name: Install IIS Web-Server with sub features and management tools
     win_feature:
       name: Web-Server
@@ -24,6 +22,6 @@
     win_iis_website:
         name: Test Site
         state: started 
-        ip: 127.0.0.1
+        ip: *
         port: 81
         physical_path: c:\sites\testsite
