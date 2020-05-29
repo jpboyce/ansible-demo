@@ -10,4 +10,4 @@
         arguments: /S
         product_id: Notepad++
         creates_path: C:\Program Files\Notepad++\notepad++.exe
-        creates_version: 7.8.6.0
+        creates_version: 7.8.6
