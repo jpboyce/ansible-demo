@@ -21,6 +21,6 @@
     win_iis_website:
         name: Test Site
         state: started 
-        ip: 127.0.0.1
+        ip: 0.0.0.0
         port: 81
         physical_path: c:\sites\testsite
