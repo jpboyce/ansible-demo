@@ -1,0 +1,13 @@
+---
+- name: Notepad++ Playbook
+  hosts: all
+
+  tasks:
+  - name: Install Notepad++
+    win_package:
+        state: present 
+        path: https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.8.6/npp.7.8.6.Installer.x64.exe
+        arguments: /S
+        product_id: Notepad++ (64-bit x64)
+        creates_path: C:\Program Files\Notepad++\notepad++.exe
+        creates_version: 7.8.6.0
