@@ -4,7 +4,6 @@
   gather_facts: yes
 
   tasks:
-  #- debug: var=ansible_facts["ansible_ip_addresses"]
   - debug:
     msg: "{{ ansible_facts['os_family'] }}"
   #- name: Install IIS Web-Server with sub features and management tools
