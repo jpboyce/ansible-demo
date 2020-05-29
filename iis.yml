@@ -4,7 +4,7 @@
 
   tasks:
   - debug:
-      msg: System {{ inventory_hostname }} has IP {{ ansible_default_ipv4.address }}
+      msg: System {{ inventory_hostname }} has IP {{ ansible_facts["ansible_ip_addresses"] }}
   - name: Install IIS Web-Server with sub features and management tools
     win_feature:
       name: Web-Server
