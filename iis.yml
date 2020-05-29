@@ -13,6 +13,10 @@
   - name: Reboot if required
     win_reboot:
     when: win_feature.reboot_required # reboot_required is one of the return values when installing a feature
+  - name: Create site folder
+    win_file:
+      path: c:\sites\testsite
+      state: directory
   - name: Configure Website
     win_iis_website:
         name: Test Site
