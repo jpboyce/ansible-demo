@@ -1,6 +1,6 @@
 ---
 - name: Powershell 7 Playbook
-  hosts: all
+  hosts: demowin
 
   tasks:
   - name: Install Powershell 7

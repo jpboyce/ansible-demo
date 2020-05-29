@@ -1,6 +1,6 @@
 ---
 - name: IIS Playbook
-  hosts: all
+  hosts: demowin
   gather_facts: yes
 
   tasks:

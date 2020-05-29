@@ -1,6 +1,6 @@
 ---
 - name: Windows Firewall Playbook
-  hosts: all
+  hosts: demowin
 
   tasks:
   - name: Allow port 2000

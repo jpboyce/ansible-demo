@@ -1,6 +1,6 @@
 ---
 - name: Notepad++ Playbook
-  hosts: all
+  hosts: demowin
 
   tasks:
   - name: Install Notepad++
