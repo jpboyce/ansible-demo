@@ -5,7 +5,7 @@
 
   tasks:
   - debug: 
-    msg: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }}"
+      msg: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }}"
   - name: Install IIS Web-Server with sub features and management tools
     win_feature:
       name: Web-Server
