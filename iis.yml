@@ -3,6 +3,8 @@
   hosts: all
 
   tasks:
+  - debug:
+    msg: System {{ inventory_hostname }} has IP {{ ansible_facts["eth0"]["ipv4"]["address"] }}
   - name: Install IIS Web-Server with sub features and management tools
     win_feature:
       name: Web-Server
@@ -21,6 +23,6 @@
     win_iis_website:
         name: Test Site
         state: started 
-        ip: 0.0.0.0
+        ip: 127.0.0.1
         port: 81
         physical_path: c:\sites\testsite
