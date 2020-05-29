@@ -14,10 +14,10 @@
         dest: C:\TEMP\SysinternalsSuite.zip
         checksum: e7bb1d53993f54a2cd2ba59a0c4758d6cfa87ae2fb6a0abf423fd548caabd01e
         checksum_algorithm: sha256
-        
+
   - name: Unzip Sysinternals Suite
     win_unzip:
         dest: C:\Tools
-        src: C:\TEMP\SysinternalsSuite.zip # required. File to be unzipped (provide absolute path).
-        delete_archive: no # not required. Remove the zip file, after unzipping.
+        src: C:\TEMP\SysinternalsSuite.zip
+        delete_archive: no
         creates: C:\Tools
