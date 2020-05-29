@@ -27,3 +27,11 @@
         ip: "{{ ansible_facts['ip_addresses'][0] }}"
         port: 81
         physical_path: c:\sites\testsite
+  - name: Transfer Website HTML
+    win_get_url:
+      url: https://raw.githubusercontent.com/jpboyce/ansible-demo/master/website/index.html
+      dest: c:\sites\testsite\index.html
+  - name: Transfer Website Image
+    win_get_url:
+      url: https://github.com/jpboyce/ansible-demo/raw/master/website/cat.jpg
+      dest: c:\sites\testsite\cat.jpg   
