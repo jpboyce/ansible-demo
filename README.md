@@ -5,8 +5,8 @@ Resources for Ansible demo
 Configuring a Windows target to be managed by Ansible involves two parts - defining/creating an account that Ansible will use and configuring WinRM on the target
 
 ### Ansible User Account
-1. Create a user account ```net user ansible "@ns1bl3isg00d!" /add```
-2. Add user to the local administrators group ```net localgroup "administrators" "ansible" /add```
+1. Create a user account:  `net user ansible "@ns1bl3isg00d!" /add`
+2. Add user to the local administrators group:  `net localgroup "administrators" "ansible" /add`
 
 ### Configuring WinRM
 **NOTE: The script used for this part configures WinRM in a very insecure fashion.  While this may be appropriate for home lab environments, it's not for production environments**
@@ -20,9 +20,9 @@ powershell.exe -ExecutionPolicy ByPass -File $file
 
 ## Installing and Configuring the Ansible Control Machine
 These instructions are for CentOS 8.  You can find instructions for other platforms [here](https://docs.ansible.com/ansible/latest/installation_guide/index.html)
-1. Add the EPEL repository ```yum install epel-release```
-2. Install Ansible ```yum install ansible```
-3. Confirm installation and version ```ansible --version```
+1. Add the EPEL repository:  `yum install epel-release`
+2. Install Ansible:  `yum install ansible`
+3. Confirm installation and version:  `ansible --version`
 4. Edit `/etc/ansible/hosts`
 5. Add an inventory section for the Windows machine
 ```shell
@@ -33,6 +33,7 @@ These instructions are for CentOS 8.  You can find instructions for other platfo
 ```
 6. Add a variables section so Ansible knows how to connect to it properly and what account to use
 ```shell
+# Ansible Demo Variables
 [demowin:vars]
 
 ansible_connection=winrm
