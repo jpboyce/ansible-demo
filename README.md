@@ -1,3 +1,11 @@
+- [Ansible Demo](#ansible-demo)
+  - [Configuring a Windows target](#configuring-a-windows-target)
+    - [Ansible User Account](#ansible-user-account)
+    - [Configuring WinRM](#configuring-winrm)
+  - [Installing and Configuring the Ansible Control Machine](#installing-and-configuring-the-ansible-control-machine)
+  - [Getting and Using Demo Resources](#getting-and-using-demo-resources)
+  - [Resources](#resources)
+
 # Ansible Demo
 Resources for Ansible demo
 
