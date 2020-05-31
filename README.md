@@ -44,6 +44,11 @@ ansible_password=@ns1bl3isg00d!
 7. Save the file
 8. Test that it works using the `win_ping` module: `ansible all -m win_ping`
 
+## Getting and Using Demo Resources
+The easiest way to get the demo resources onto the Control Machine would be to clone this repo: `git clone https://github.com/jpboyce/ansible-demo.git`.  Update the yml files as necessary - specifically `powershell.yml` and `notepadplusplus.yml` will need to have the path attributes updated.
+
+To run one of the playbooks on the Control Machine, use the command: `ansible-playbook <playbookfilename>`.  For example: `ansible-playbook sysinternals.yml`
+
 ## Resources
 * [Ansible Documentation](https://docs.ansible.com/ansible/latest/index.html)
 * [Ansible Examples](https://github.com/ansible/ansible-examples)
